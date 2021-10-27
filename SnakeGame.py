@@ -149,8 +149,8 @@ while True :
             scoring.goto(0,0)
             scoring.write(f"    Game Over \n Your Score is {score}",align="center", font=("times",24,"italic"))
 
-    for food in old_fruit :
-        if food.distance(snake)<20 :
+    for fruit in old_fruit :
+        if fruit.distance(snake) < 20 :
                 time.sleep(1)
                 screen.clear()
                 screen.bgcolor("turquoise")
